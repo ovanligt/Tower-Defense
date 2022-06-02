@@ -6,6 +6,7 @@ public class Turret : MonoBehaviour
     public float RangeAttack = 15f;
     public string EnemyTag = "Enemy";
 
+
     [SerializeField]private Transform _target;
     private void Start()
     {
