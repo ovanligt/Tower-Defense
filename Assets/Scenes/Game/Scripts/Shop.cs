@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint StandartTurret;
     private BuildMaster _buildMaster;
-    //public GameObject StandartTurretPrefab;
 
     private void Start()
     {
         _buildMaster = BuildMaster.instance;
     }
 
-    public void BuildDefoltTurret()
+    public void SelectDefoltTurret()
     {
 
-        _buildMaster.BuildTorret(_buildMaster.StandartTurretPrefab);
+        _buildMaster.SelectTurretToBuild(StandartTurret);
     }
 }

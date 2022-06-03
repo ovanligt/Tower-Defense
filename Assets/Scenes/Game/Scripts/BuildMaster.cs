@@ -5,10 +5,9 @@ public class BuildMaster : MonoBehaviour
 {
     public static BuildMaster instance;
     public GameObject StandartTurretPrefab;
+    public bool CanBuild { get { return _turretToBuild != null; } }
 
-    //public GameObject AnotherTurretPrefab;
-
-    private GameObject _turretToBuild;
+    private TurretBlueprint _turretToBuild;
 
     private void Awake()
     {
@@ -19,13 +18,16 @@ public class BuildMaster : MonoBehaviour
         }
         instance = this; 
     }
+    
 
-    public GameObject GetTurretToBuild() 
+    public void BuildTurretOn(Node node) 
     {
-        return _turretToBuild; 
+        GameObject turret = (GameObject)Instantiate(_turretToBuild.Prefab,
+            node.transform.position, node.transform.rotation);
+        node._turret = turret;
     }
 
-    public void BuildTorret(GameObject turret) 
+    public void SelectTurretToBuild(TurretBlueprint turret) 
     {
         _turretToBuild = turret;
     }
