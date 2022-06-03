@@ -38,4 +38,6 @@ public class Enemy : MonoBehaviour
         _wavepointIndex ++;
         _target = Waypoint.points[_wavepointIndex];
     }
+
+    
 }

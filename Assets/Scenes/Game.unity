@@ -7916,7 +7916,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 
 --- !u!222 &917989379
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9682,26 +9682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8514809402519474049, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514809402519474049, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514809402519474049, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514809402519474049, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514809402519474049, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 9149613996369082581, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
+      propertyPath: _enemyPrefab
+      value: 
+      objectReference: {fileID: 597848407476946142, guid: 8da6e3d81fe605946ba90006bc9fdfde, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
 --- !u!4 &1147203579 stripped
