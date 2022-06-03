@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    public Color enterColor;
+    public Color EnterColor;
     private Vector3 positionOffset;
     public GameObject _turret;
 
     private BuildMaster _buildMaster;
-    private new Renderer _renderer ;
+    private Renderer _renderer;
     private Color _defoltColor;
+    private Color _NoMoneyColor;
 
     private void Start()
     {
@@ -44,7 +45,17 @@ public class Node : MonoBehaviour
     {
         if (!_buildMaster.CanBuild)
         { return; }
-        _renderer.material.color = enterColor;
+
+        if (_buildMaster.HasMoney)
+        {
+        _renderer.material.color = EnterColor;
+        }
+        else 
+        {
+            _renderer.material.color = _NoMoneyColor = new Color (1 , 0 , 0);
+}
+
+
     }
     private void OnMouseExit()
     {

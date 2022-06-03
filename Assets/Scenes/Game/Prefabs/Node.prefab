@@ -110,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb24d27e614ed742bb593caa43b4728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defoltColor: {r: 1, g: 1, b: 1, a: 0}
-  enterColor: {r: 1, g: 0.9331323, b: 0.3160377, a: 0.7607843}
+  EnterColor: {r: 0.48883086, g: 0.8584906, b: 0.125534, a: 0}
+  _turret: {fileID: 0}
