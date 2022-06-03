@@ -8,11 +8,13 @@ public class Castle : MonoBehaviour
     public int CurrentHealth;
     public GameObject i;
     //public HealthBar healthBar;
+ 
 
     private void Start()
     {
         CurrentHealth = MaxHealth;
        // healthBar.SetHealth(MaxHealth);
+     
     }
 
     public void TakeDamage(int damage)
@@ -25,7 +27,10 @@ public class Castle : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             DemolutionofCastle();
+         
         }
+
+        
     }
     private void DemolutionofCastle()
     {

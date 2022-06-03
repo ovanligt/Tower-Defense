@@ -51,7 +51,7 @@ MonoBehaviour:
   _partToRate: {fileID: 8514809402519474049}
   _fireRate: 1
   _fireCountdown: 0
-  bullet: {fileID: 7734538506510060875, guid: c3ddccfcd6e5029499d2415a59157bc3, type: 3}
+  bulletPrefab: {fileID: 7734538506510060875, guid: c3ddccfcd6e5029499d2415a59157bc3, type: 3}
   fitePoint: {fileID: 6671444856333997425}
 --- !u!1 &4183026402161140414
 GameObject:

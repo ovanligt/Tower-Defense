@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
     public float Speed = 50f;
+    
 
     private void Update()
     {
@@ -34,6 +35,8 @@ public class Bullet : MonoBehaviour
     public void SeekTarget(Transform _target)
     {
         target = _target;
+
+        
     }
 
 
