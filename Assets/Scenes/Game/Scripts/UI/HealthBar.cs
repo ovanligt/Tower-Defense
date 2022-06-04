@@ -1,15 +1,20 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 
 public class HealthBar : MonoBehaviour
 {
-    public TMP_Text LivesText;
+    public Slider healthBar;
 
-    private void Update()
+    public void SetMaxHealth(int health)
     {
-        LivesText.text = PlayerParameters.Lives.ToString() + " Lives";
+        healthBar.maxValue = health;
+        healthBar.value = health;
     }
+
+    public void SetHealth(int health) 
+    {
+        healthBar.value = health;
+    }  
 
 }

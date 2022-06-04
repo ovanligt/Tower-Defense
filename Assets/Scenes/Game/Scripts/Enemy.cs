@@ -1,18 +1,24 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     public float Speed = 3f;
+    public int StartHealth = 100;
+    private int _health;
+    public HealthBar FillHealth;
 
-    public float Health = 100f;
     private Transform _target;
     private int _wavepointIndex = 0;
 
     public void TakeDamage(int damage) 
     {
-        Health -= damage;
+        StartHealth -= damage;
+        FillHealth.SetHealth(StartHealth);
 
-        if (Health <= 0)
+
+
+        if (StartHealth <= 0)
         {
             EnemyDie();
         }
@@ -26,6 +32,8 @@ public class Enemy : MonoBehaviour
     private void Start() 
     {
         _target = Waypoint.points[0];
+        _health = StartHealth;
+        FillHealth.SetMaxHealth(StartHealth);
     }
 
     private void Update() 
