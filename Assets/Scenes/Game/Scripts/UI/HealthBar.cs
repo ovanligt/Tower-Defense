@@ -1,28 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
+
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;
-    public Gradient gradient;
-    public Image fill;
+    public TMP_Text LivesText;
 
-    public void setMaxHealth(int health)
+    private void Update()
     {
-        slider.maxValue = health;
-        slider.value = health;
-
-        fill.color = gradient.Evaluate(1f);
+        LivesText.text = PlayerParameters.Lives.ToString() + " Lives";
     }
-
-    public void SetHealth(int health)
-    {
-        slider.value = health;
-
-        fill.color = gradient.Evaluate(slider.normalizedValue);
-    }
-
 
 }
