@@ -3881,7 +3881,7 @@ GameObject:
   - component: {fileID: 482703619}
   - component: {fileID: 482703622}
   m_Layer: 5
-  m_Name: Shop
+  m_Name: Shoppp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3984,6 +3984,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ded346c67030ea4994c8c523b20b2e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StandartTurret:
+    Prefab: {fileID: 387926773900833766, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
+    TurretCost: 100
 --- !u!1001 &489047194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6328,6 +6331,7 @@ GameObject:
   - component: {fileID: 706218677}
   - component: {fileID: 706218676}
   - component: {fileID: 706218678}
+  - component: {fileID: 706218679}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -6379,6 +6383,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StandartTurretPrefab: {fileID: 387926773900833766, guid: d818f6f2d06cab54f972407b4862301a, type: 3}
+--- !u!114 &706218679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706218675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cedd0c35af2334d9365885562d8669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartMoney: 400
 --- !u!1001 &709046676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6659,6 +6676,7 @@ RectTransform:
   m_Children:
   - {fileID: 917989376}
   - {fileID: 482703618}
+  - {fileID: 1940910856}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8097,7 +8115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &917989376
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15599,6 +15617,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6902797541662402557, guid: 87f0e7c5e11be1a41a413123c26a6860, type: 3}
   m_PrefabInstance: {fileID: 1938247530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940910855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940910856}
+  - component: {fileID: 1940910858}
+  - component: {fileID: 1940910857}
+  m_Layer: 5
+  m_Name: Money
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1940910856
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940910855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 738455111}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -837.162, y: 467.47668}
+  m_SizeDelta: {x: 223.676, y: 105.0467}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1940910857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940910855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ' 300 Coins'
+--- !u!222 &1940910858
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940910855}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1941137090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17225,9 +17323,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 482703618}
     m_Modifications:
     - target: {fileID: 7934401967437629400, guid: c94479a51ac0cc64d908bb51e603d03d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934401967437629400, guid: c94479a51ac0cc64d908bb51e603d03d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 482703622}
+    - target: {fileID: 7934401967437629400, guid: c94479a51ac0cc64d908bb51e603d03d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectDefoltTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934401967437629400, guid: c94479a51ac0cc64d908bb51e603d03d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Shop, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7934401967437629405, guid: c94479a51ac0cc64d908bb51e603d03d, type: 3}
       propertyPath: m_Name
       value: SlotInShop
