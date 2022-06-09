@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
     {
         if (_gameIsOver) return;
 
-        if (Input.GetKeyDown("e"))
-        {
-            GameOver();
-        }
-
         if (PlayerParameters.Lives <= 0)
         {
             GameOver();

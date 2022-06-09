@@ -6747,7 +6747,6 @@ GameObject:
   - component: {fileID: 674362768}
   - component: {fileID: 674362767}
   - component: {fileID: 674362766}
-  - component: {fileID: 674362764}
   m_Layer: 0
   m_Name: Castle
   m_TagString: Finish
@@ -6755,21 +6754,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &674362764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674362763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5cacf1a7e8af25429fc4911aa6a909c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 100
-  CurrentHealth: 0
-  i: {fileID: 674362763}
 --- !u!65 &674362766
 BoxCollider:
   m_ObjectHideFlags: 0
