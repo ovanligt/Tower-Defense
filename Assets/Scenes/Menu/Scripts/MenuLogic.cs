@@ -7,7 +7,7 @@ public class MenuLogic : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
-    public void ExitButton() // Работает в готовом билде
+    public void ExitButton() // РџРѕСЃР»Рµ Р±РёР»РґР°
     {
         Application.Quit();
         Debug.Log("Exit pressed!");

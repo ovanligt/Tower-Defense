@@ -21,17 +21,22 @@ public class WaveSpawner : MonoBehaviour
 
         }
         _countDown -= Time.deltaTime;
-        CountIndex.text = Mathf.Round(_countDown).ToString();
+
+        _countDown = Mathf.Clamp(_countDown, 0f, Mathf.Infinity);
+
+        CountIndex.text = string.Format("{0:00.00}", _countDown); 
     }
 
     IEnumerator SpawnWave()
     {
+        _waveIndex ++;
+        PlayerParameters.WaveSurv++;
+
         for (int i = 0; i < _waveIndex; i++)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(0.5f);
         }
-        _waveIndex ++;
     } 
 
     private void SpawnEnemy()
